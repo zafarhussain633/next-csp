@@ -31,6 +31,9 @@ const securityMiddleware = [
         "https://www.google.com",
         "https://www.gstatic.com",
       ],
+      "require-trusted-types-for":[
+        "script"
+      ]
     },
   }),
 ];
