@@ -21,8 +21,6 @@ const securityMiddleware = [
       ],
       "script-src": [
         "self",
-        "unsafe-eval",
-        "unsafe-inline",
         "https://www.google.com",
         "https://www.gstatic.com",
       ],
