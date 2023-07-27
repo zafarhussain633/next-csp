@@ -1,9 +1,13 @@
 import { chainMatch, isPageRequest, csp } from "@next-safe/middleware";
 
+export const nonce = "shdjed2323nm223nmm233sdmndmnn2"
+
 const securityMiddleware = [
+  
   csp({
     // Your CSP base configuration with IntelliSense
     // Single quotes for values like 'self' are automatic
+    
     directives: {
       "default-src": ["self", "google.com"],
       "img-src": ["self", "data:", "https://images.unsplash.com"],
@@ -22,7 +26,7 @@ const securityMiddleware = [
       "script-src": [
         "self",
         "unsafe-eval",
-        "unsafe-inline",
+        `nonce-${nonce}`,
         "https://www.google.com",
         "https://www.gstatic.com",
       ],
@@ -31,9 +35,6 @@ const securityMiddleware = [
         "https://www.google.com",
         "https://www.gstatic.com",
       ],
-      "require-trusted-types-for":[
-        "script"
-      ]
     },
   }),
 ];
