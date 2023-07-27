@@ -8,7 +8,12 @@ const securityMiddleware = [
       "default-src": ["self", "google.com"],
       "img-src": ["self", "data:", "https://images.unsplash.com"],
       "font-src": ["self", "https://fonts.gstatic.com"],
-      "style-src": ["self", "https://fonts.googleapis.com"],
+      "style-src": [
+        "self",
+        "unsafe-inline",
+        "https://fonts.googleapis.com"
+        
+      ],
       "connect-src": [
         "self",
         "https://www.google.com",
