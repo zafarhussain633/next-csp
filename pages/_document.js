@@ -20,13 +20,9 @@ function MyDocument(props) {
 
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-Q8Q029J7XV"
-        ></script>
-        {/* <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-Q8Q029J7XV');
-        </script> */}
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q8Q029J7XV" 
+        />
+      
       </Head>
       <body>
         <Main />
