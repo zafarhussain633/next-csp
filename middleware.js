@@ -29,6 +29,7 @@ const securityMiddleware = [
         "unsafe-inline",
         "https://www.google.com",
         "https://www.gstatic.com",
+        "https://www.googletagmanager.com"
       ],
       "frame-src": [
         "self",
